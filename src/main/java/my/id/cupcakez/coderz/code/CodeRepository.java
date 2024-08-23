@@ -8,6 +8,6 @@ import java.util.List;
 public interface CodeRepository extends ListCrudRepository<Code, Integer> {
     // This query annotation is used to define the query that will be executed
     // The query will be executed when the method is called
-    @Query("SELECT * FROM codes WHERE tech_stack = :techStack")
+    @Query("SELECT * FROM code WHERE tech_stack = :techStack")
     List<Code> findByTechStack(String techStack);
 }

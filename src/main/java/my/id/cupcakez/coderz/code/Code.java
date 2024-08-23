@@ -17,9 +17,7 @@ public record Code(@Id Integer id,
     @Positive Integer duration,
     @NotEmpty String location,
     LocalDateTime createdAt,
-    LocalDateTime updatedAt,
-    @Version
-    Integer version
+    LocalDateTime updatedAt
 ) {
 
   // This code below will run when we create new instance of the class
